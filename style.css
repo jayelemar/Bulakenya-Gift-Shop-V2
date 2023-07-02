@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    /* outline: 1px solid red; */
 }
 
 :root {
@@ -10,7 +12,7 @@
     --black: #1c2b2d;
     --blue: #31326f;
     --light-blue: #005490;
-    --color-primary: #F08FC0;
+    --color-primary: red;
     --color-sec: #db6400;
     --grey: #eee;
     --dark-grey: #222831;
@@ -18,46 +20,149 @@
 
 body {
     font-size: 16px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     width: 100%;
+    font-family: Montserrat, sans-serif, arial;
 }
+
 
 header {
+    position: relative;
+    top: 45vh;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    max-height: 4rem;
-    width: 100%;
-    background-color: var(--color-primary);
-    padding: 1rem 0;
+    height: 4rem;
+    width: 36rem;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
 }
 
-h1 {
-    margin-left: 1rem;
-    align-items: center;
-    font-size: 2rem;
+header button {
+    width: 7rem;
+    margin: 0 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    height: 3.4rem;
+
+}
+header img {
+    width: 60px;
+}
+
+header img,
+header h1 {
+    pointer-events: none;
+    -webkit-user-select: none;
     color: var(--white);
 }
-span {
+.logo {
+    display: flex;
+    visibility: visible;
+}
+
+.logo h1 {
+    position: relative;
+    top: .5rem;
+    font-family: Alegreya, sans-serif, arial;
+    font-size: 1.8rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+h1 span {
+    font-size: 2rem;
+    font-weight: 700;
     color: yellow;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    list-style: none;;
-    margin: 0 1rem 0;
+#explore-btn {
+    font-weight: 200;
+    background-color: black;
     color: var(--white);
+    font-family: sans-serif, arial;
+    /* visibility: hidden; */
 }
 
-img {
-    width:  30%;
+#contact-btn {
+    font-weight: 200;
+    background-color: var(--white);
+    color: var(--dark-grey);
+    font-family: sans-serif, arial;
 }
+
+nav {
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    top: .3rem;
+    left: -.4rem;
+    display: flex;
+    flex-direction: row-reverse; /* Set the flex direction to row-reverse */
+    align-items: center;
+    justify-content: flex-start; /* Align the items to the right */
+    margin: 0 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 9px;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: black;
+    transition: all .5s ease;
+    width: 0; /* Start with a width of 0 */
+    overflow: hidden;
+    white-space: nowrap;
+    height: 3.4rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    /* visibility: hidden; */
+    /* transition: all .5s ease; */
+    padding: 0 1rem;
+}
+
+nav.open {
+        width: 27rem; /* Expand the width to 27rem when the 'open' class is added */
+}
+
+
+
+/* .logo {
+    display: flex;
+    font-family: Alegreya, sans-serif, arial;
+    font-weight: 200;
+    -webkit-user-select: none;
+    pointer-events: none;
+    filter: drop-shadow(10px 10px 20px #ff0000);
+    text-shadow: 1px 1px 15px #ff0000;
+} */
+
+/* header {
+    height: 100vh;
+    width: 100%;
+    background-color: blue; */
+/* } */
+/* nav {
+    margin: 40vh auto;
+    height: 5rem;
+    width: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+} */
+/* 
+main {
+    height: 400px;
+} */
