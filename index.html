@@ -8,21 +8,88 @@
     </head>
     <body>
         <header>
-            <button id="explore-btn">Explore</button>
-            <nav>
-                <a href="">Work</a>
-                <a href="">About</a>
-                <a href="">News</a>
-                <a href="">Resources</a>
-            </nav>
-            <div class="logo">
-                <img src="/images/bulakenya-logo.jpg" alt="" />
-                <h1><span>B</span>ulakenya Gift Shop</h1>
-            </div>
+            <div class="container">
+                <button id="explore-btn">Explore</button>
+                <nav>
+                    <a href="">Work</a>
+                    <a href="">About</a>
+                    <a href="">News</a>
+                    <a href="">Resources</a>
+                </nav>
+                <div class="logo">
+                    <img
+                        class="logo-img"
+                        src="/images/bulakenya-logo.jpg"
+                        alt=""
+                    />
+                    <h1><span>B</span>ulakenya Gift Shop</h1>
+                </div>
 
-            <button id="contact-btn">Contact</button>
+                <button id="contact-btn">Contact</button>
+            </div>
         </header>
-        <main></main>
+        <section class="img-slideshow">
+            <!-- <div class="buttons">
+                <button onclick="sw()">Scroll Width</button>
+                <button onclick="sl()">Scroll Left</button>
+                <button onclick="cw()">Client Width</button>
+                <button onclick="calc()">SW -CW</button>
+            </div> -->
+            <div class="slide-container">
+                <img
+                    src="/images/arrow-left.png"
+                    alt="arrow-left"
+                    id="slide-left"
+                    class="arrow"
+                />
+
+                <section class="container" id="slider">
+                    <!-- 1st Product -->
+                    <div class="thumbnail">
+                        <img src="/images/1.jpg" alt="bamboo-notebook" />
+                    </div>
+                    <!-- 1st Product -->
+                    <!-- 2nd Product -->
+                    <div class="thumbnail">
+                        <img src="/images/2.jpg" alt="keychain" />
+                    </div>
+                    <!-- 2nd Product -->
+                    <!-- 3rd Product -->
+                    <div class="thumbnail">
+                        <img src="/images/3.jpg" alt="black-watch" />
+                    </div>
+                    <!-- 3rd Product -->
+                    <!-- 4th Product -->
+                    <div class="thumbnail">
+                        <img src="/images/4.jpg" alt="black-watch" />
+                        <div class="product-details">
+                            <h2>Demo Product</h2>
+                            <p><span>$39.99</span>$29.99</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!-- 4th Product -->
+                    <!-- 5th Product -->
+                    <div class="thumbnail">
+                        <img src="/images/5.png" alt="black-watch" />
+                        <div class="product-details">
+                            <h2>Demo Product</h2>
+                            <p><span>$39.99</span>$29.99</p>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+                    <!-- 5th Product -->
+                </section>
+
+                <img
+                    src="/images/arrow-right.png"
+                    alt="arrow-right"
+                    id="slide-right"
+                    class="arrow"
+                />
+            </div>
+        </section>
+        <section></section>
 
         <footer></footer>
 
